@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เที่ยวเมืองไทย - Thailand Travel Gallery</title>
+    <!-- นำเข้า Tailwind CSS เพื่อความสวยงาม -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Kanit', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- ส่วนหัวของเว็บไซต์ (Header) -->
+    <header class="bg-blue-600 text-white py-10 shadow-md text-center">
+        <h1 class="text-4xl font-bold mb-2">🇹🇭 Amazing Thailand Gallery</h1>
+        <p class="text-lg font-light opacity-90">รวบรวมภาพถ่ายสถานที่ท่องเที่ยวสุดประทับใจในเมืองไทย</p>
+    </header>
+
+    <!-- ส่วนเนื้อหาหลัก (Main Content) -->
+    <main class="container mx-auto px-4 py-10">
+        
+        <!-- หมวดหมู่การท่องเที่ยว (Filter Buttons) -->
+        <div class="flex justify-center space-x-4 mb-10 overflow-x-auto pb-2">
+            <button class="bg-blue-500 text-white px-5 py-2 rounded-full shadow hover:bg-blue-600 transition">ทั้งหมด</button>
+            <button class="bg-white text-gray-700 px-5 py-2 rounded-full shadow hover:bg-gray-100 transition">ทะเล / เกาะ</button>
+            <button class="bg-white text-gray-700 px-5 py-2 rounded-full shadow hover:bg-gray-100 transition">ภูเขา / ดอย</button>
+            <button class="bg-white text-gray-700 px-5 py-2 rounded-full shadow hover:bg-gray-100 transition">วัด / วัฒนธรรม</button>
+        </div>
+
+        <!-- ส่วนแสดงรูปภาพ (Gallery Grid) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <!-- การ์ดสถานที่ที่ 1 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                <!-- ใส่ลิงก์รูปภาพของคุณที่ช่อง src -->
+                <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?q=80&w=600" alt="วัดพระแก้ว" class="w-full h-64 object-cover">
+                <div class="p-5">
+                    <span class="bg-red-100 text-red-600 text-xs font-semibold px-2.5 py-0.5 rounded">วัด / วัฒนธรรม</span>
+                    <h3 class="text-xl font-bold mt-2 mb-1">วัดพระศรีรัตนศาสดาราม</h3>
+                    <p class="text-gray-600 text-sm">กรุงเทพมหานคร - วัดคู่บ้านคู่เมืองของประเทศไทย สถาปัตยกรรมงดงามตระการตา</p>
+                </div>
+            </div>
+
+            <!-- การ์ดสถานที่ที่ 2 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=600" alt="ทะเลภาคใต้" class="w-full h-64 object-cover">
+                <div class="p-5">
+                    <span class="bg-blue-100 text-blue-600 text-xs font-semibold px-2.5 py-0.5 rounded">ทะเล / เกาะ</span>
+                    <h3 class="text-xl font-bold mt-2 mb-1">เกาะพีพี</h3>
+                    <p class="text-gray-600 text-sm">กระบี่ - สวรรค์ของคนรักทะเล น้ำใสสีครามและหาดทรายขาวละเอียด</p>
+                </div>
+            </div>
+
+            <!-- การ์ดสถานที่ที่ 3 -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                <img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?q=80&w=600" alt="ดอยเชียงใหม่" class="w-full h-64 object-cover">
+                <div class="p-5">
+                    <span class="bg-green-100 text-green-600 text-xs font-semibold px-2.5 py-0.5 rounded">ภูเขา / ดอย</span>
+                    <h3 class="text-xl font-bold mt-2 mb-1">ดอยอินทนนท์</h3>
+                    <p class="text-gray-600 text-sm">เชียงใหม่ - ยอดเขาที่สูงที่สุดในประเทศไทย สัมผัสอากาศหนาวและทะเลหมอก</p>
+                </div>
+            </div>
+
+            <!-- คุณสามารถก๊อปปี้บล็อก "การ์ดสถานที่" เพื่อเพิ่มรูปอื่นๆ เองได้ตรงนี้ -->
+
+        </div>
+    </main>
+
+    <!-- ส่วนท้ายของเว็บไซต์ (Footer) -->
+    <footer class="bg-gray-800 text-gray-400 py-6 text-center mt-20 text-sm">
+        <p>&copy; 2026 Thailand Travel Gallery. สร้างด้วยความรักในเมืองไทย</p>
+    </footer>
+
+</body>
+</html>
